@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Recipe Cards</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 30px;
+    }
+
+    .card {
+        display: flex;
+        background: #fff;
+        width: 800px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .content {
+        padding: 20px;
+        flex: 1;
+    }
+
+    .content h2 {
+        margin: 0;
+    }
+
+    .tag {
+        display: inline-block;
+        margin: 5px 0;
+        font-size: 14px;
+        color: #e67e22;
+    }
+
+    .ingredients, .instructions {
+        margin-top: 10px;
+    }
+
+    ul {
+        padding-left: 18px;
+    }
+
+    .badge {
+        float: right;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .veg {
+        background: green;
+    }
+
+    .nonveg {
+        background: red;
+    }
+</style>
+</head>
+<body>
+
+<h2>Sample Output :-</h2>
+
+<!-- Chicken Curry -->
+<div class="card">
+    <img src="1.png" alt="Chicken Curry">
+    <div class="content">
+        <span class="badge nonveg">Non-Veg</span>
+        <h2>Chicken Curry</h2>
+        <p class="tag">🍗 Non-Vegetarian</p>
+        <p>Traditional spicy Indian chicken curry.</p>
+
+        <div class="ingredients">
+            <strong>Ingredients</strong>
+            <ul>
+                <li>Chicken</li>
+                <li>Onion</li>
+                <li>Spices</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <strong>Instructions</strong>
+            <ol>
+                <li>Cook chicken</li>
+                <li>Add spices</li>
+                <li>Simmer</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Avocado Toast -->
+<div class="card">
+    <img src="image.png" alt="Avocado Toast">
+    <div class="content">
+        <span class="badge veg">Veg</span>
+        <h2>Classic Avocado Toast</h2>
+        <p class="tag">🥑 Vegetarian</p>
+        <p>A simple, healthy breakfast.</p>
+
+        <div class="ingredients">
+            <strong>Ingredients</strong>
+            <ul>
+                <li>Bread</li>
+                <li>Avocado</li>
+                <li>Olive oil</li>
+            </ul>
+        </div>
+
+        <div class="instructions">
+            <strong>Instructions</strong>
+            <ol>
+                <li>Toast bread</li>
+                <li>Mash avocado</li>
+                <li>Spread & serve</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
